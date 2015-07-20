@@ -1,0 +1,42 @@
+.page-sidebar {
+  display: none;
+  .sidebar-top {
+    margin-bottom: 40px;
+  }
+  @media (min-width: $screen-mid-size) {
+    max-width: 220px;
+    @include span(3 first);
+    display: block;
+  }
+}
+
+.page-sidebar {
+  .box {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-bottom: 40px;
+
+    .item {
+      display: block;
+      padding-left: 8px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $boder-ligthen-grey;
+      font-size: 12pt;
+      a {
+        display: block;
+        color: $text-grey;
+        text-decoration: none;
+      }
+    }
+    
+    .header {
+      @extend %header;
+      padding-top: 5px;
+      padding-bottom: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}

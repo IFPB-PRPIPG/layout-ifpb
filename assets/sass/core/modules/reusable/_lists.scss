@@ -1,0 +1,86 @@
+/*  Listas
+======================*/
+//UL
+.text-list {
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: block;
+}
+//LI
+.text-list-item {
+  display: block;
+  margin: 5px 0;
+  color: $text;
+}
+//header
+.text-list-item-header {
+  @extend .text-list-item;
+  font-weight: bold;
+  font-weight: 13pt;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $boder-ligthen-grey;
+}
+
+.text-list-item-simple-header {
+  @extend .text-list-item;
+  font-weight: bold;
+  font-weight: 13pt;
+}
+
+.text-list-item-indent {
+  @extend .text-list-item;
+  padding-left: 20px;
+}
+
+/*  Listas com tempo
+======================*/
+li, ul {
+  // border: 1px solid blue;
+}
+
+.date-list,
+.date-list-item {
+  @include clear();
+  display: block;
+}
+
+.date-list-item {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $boder-ligthen-grey;
+  .date {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 10pt;
+    color: $text-magazine-color;
+    span {
+      display: block;
+    }
+    .year {
+      background: url("../images/data.png") no-repeat;
+      background-position: center left;
+      background-size: 30%;
+      padding: 5px 30px;
+    }
+    .hour {
+      background: url("../images/hora.png") no-repeat;
+      background-position: center left;
+      background-size: 30%;
+      padding: 5px 30px;
+    }
+  }
+
+  .image {
+    img {
+      width: 100%;
+      max-width: 150px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .text {
+    color: $text;
+  }
+}

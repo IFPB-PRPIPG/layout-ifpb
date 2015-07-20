@@ -1,0 +1,72 @@
+/*  Itens reutilizaveis
+======================*/
+
+
+/*  Header box placeholder
+======================*/
+%header {
+  color: $default-green;
+  background: $grey;
+  border-top: 5px solid $default-green;
+  padding-right: 10px;
+}
+
+%footer {
+  background: $grey;
+  border-top: 1px solid $default-green;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+// .content-box {
+//   .header-box {
+//     @extend %header;
+//   }
+
+//   color: $text;
+
+//   .footer-box {
+//     @extend %footer;
+//   }
+// }
+
+/*  Formulários
+======================*/
+%label {
+  font-size: 11pt;
+  // margin: 10px 0;
+  display: inline-block;
+}
+
+/*  Botões
+======================*/
+%button {
+  text-align: center;
+  border: 1px solid;
+}
+
+/*  Imagen
+======================*/
+.img-float-left {
+  float: left;
+  margin: 10px;
+}
+.img-frame {
+  border: 1px solid $boder-ligthen-grey;
+}
+
+/*  Bordas
+======================*/
+.border-box {
+  padding-bottom: 45px;
+  border-bottom: 5px solid $default-green;
+}
+.border-title-light {
+  border-bottom: 1px solid $boder-ligthen-grey;
+  padding-bottom: 15px;
+}
+
+@import "containers";
+@import "texts";
+@import "lists";
+@import "buttons";

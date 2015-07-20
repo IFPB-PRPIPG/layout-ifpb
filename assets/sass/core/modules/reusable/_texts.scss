@@ -1,0 +1,14 @@
+/*  Formatação dos textos
+===============================*/
+%text-box-title {
+  font-family: Arial, sans-serif;
+  color: $text;
+  margin-top: 0;
+}
+
+%text-box-subtitle {
+  font-size: 13pt;
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+  color: $text;
+}

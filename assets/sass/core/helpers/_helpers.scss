@@ -1,0 +1,23 @@
+//Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+//Container máximo de conteúdo
+.content-container {
+  @include container;
+  clear: both;
+  padding: 0 15px;
+  @media(min-width: $screen-mid-size) {
+    width: $page-container-size;
+    padding: 0;
+  }
+}
+
+
+@mixin clear() {
+  &:after, &:before {
+    clear: both;
+    display: table;
+    content: ' ';
+    zoom: 1;
+  }
+}

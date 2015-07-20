@@ -1,0 +1,44 @@
+.page-footer {
+  background: $default-green;
+  color: #fff;
+  @include clear();
+}
+
+.sub-footer {
+  background: $dark-green;
+  padding: 15px 0;
+}
+
+.footer-box {
+  display: inline-block;
+  @include span(3);
+  @include clear();
+
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    h4 {
+      margin: 0;
+      padding-top: 0;
+    }
+  }
+
+  .title,
+  .item {
+    list-style: none;
+    display: block;
+  }
+
+  .item {
+    font-size: 9pt;
+    padding-bottom: 5px;
+    display: block;
+
+  }
+
+  .footer-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,50 @@
+/*  Colunas utilizaveis em caixas
+=====================================*/
+@media (min-width: $screen-mid-size) {
+  .mid-8 {
+    @include span(8);
+    &.last {
+      @include span(8 last);
+    }
+  }
+  .mid-6 {
+    @include span(6);
+    &.last {
+      @include span(6 last);
+    }
+  }
+  .mid-5 {
+    @include span(5);
+    &.last {
+      @include span(5 last);
+    }
+  }
+  .mid-4 {
+    @include span(4);
+    &.last {
+      @include span(4 last);
+    }
+  }
+  .mid-3 {
+    @include span(3);
+    &.last {
+      @include span(3 last);
+    }
+  }
+  .mid-2 {
+    @include span(2);
+    &.last {
+      @include span(2 last);
+    }
+  }
+}
+
+.image-responsible {
+  width: 100%;
+}
+
+@media (max-width: $screen-mid-size) {
+  .xs-1 {
+    @include span(12);
+  }  
+}
