@@ -91,6 +91,7 @@ Container das redes sociais
   padding-bottom: $header-padding-bottom;
   .header-logo {
     @include span(12);
+    min-height: 80px;
     @media (min-width: $screen-mid-size) {
       @include span(6);
     }
@@ -103,7 +104,7 @@ Container das redes sociais
   @include span(12);
   padding: 4px 0;
   margin-top: 15px;
-  font-size: 10pt;
+  font-size: 9pt;
   text-align: center;
   @media (min-width: $screen-mid-size) {
     text-align: right;
@@ -118,7 +119,7 @@ Container das redes sociais
 .form-login {
 
   label {
-    font-size: 10pt;
+    font-size: 9pt;
     margin-right: 5px;
     margin-left: 10px;
     display: block;
@@ -128,8 +129,8 @@ Container das redes sociais
   }
 
   input {
-    // font-size: 7pt;
-    padding: 3px;
+    padding: 0 3px;
+    font-size: 9pt;
     border: 0;
     outline: none;
     border-radius: 10px;

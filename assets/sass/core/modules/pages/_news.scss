@@ -1,6 +1,8 @@
 /*  Caixa de texto externa
 ===========================*/
 .text-box {
+  display: block;
+  @include clear;
   .header-title {
     @extend %text-box-title;
     &.large-size {
