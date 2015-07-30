@@ -1,0 +1,65 @@
+.image-responsible {
+  width: 100%;
+}
+.banner-content {
+  width: 100%;
+  padding-bottom: 26px;
+}
+.slide-content {
+  padding-bottom: 30px;
+}
+
+/* Slide
+========================*/
+.fotorama__caption__wrap {
+  font-weight: bold;
+  background-color: #fff;
+  background-color: rgba(0,0,0,.4);
+  padding: 5px 10px;
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+}
+
+.fotorama__nav--dots .fotorama__nav__frame {
+  background: #1f6012;
+  padding: 0 4px;
+
+  .fotorama__dot {
+    background: #fff;
+    display: block;
+    width: 6px;
+    height: 6px;
+    position: relative;
+    top: 12px;
+    left: 6px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+  }
+
+  &.fotorama__active {
+    background: #ffb400;
+    .fotorama__dot {
+      background: #1f6012;
+      display: block;
+      width: 6px;
+      height: 6px;
+      position: relative;
+      top: 12px;
+      left: 6px;
+      border-radius: 6px;
+      border: 1px solid #1f6012;
+    }
+
+  }
+}
+
+.fotorama__nav-wrap {
+  margin-top: -30px;
+  float: right;
+}
+
+.fotorama__nav .fotorama__nav--dots {
+  float: right;
+  width: auto !important;
+}
