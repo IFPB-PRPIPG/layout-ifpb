@@ -1,12 +1,21 @@
 .page-footer {
+  @include clear();
   background: $default-green;
   color: #fff;
-  @include clear();
 }
 
 .sub-footer {
+  @include clear();
   background: $dark-green;
   padding: 15px 0;
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
 }
 
 .footer-box {
@@ -16,6 +25,7 @@
 
 
   .title {
+    font-size: 14pt;
     font-weight: bold;
     margin-bottom: 15px;
     h4 {
