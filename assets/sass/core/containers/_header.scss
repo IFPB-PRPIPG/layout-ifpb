@@ -17,12 +17,25 @@
 //Barra de idiomas
 .language-bar {
   width: 100%;
-  text-align: right;
+  text-align: center;
   font-size: 10pt;
 
   //Desktop, flutuada a esquerda
   @media(min-width: $screen-mid-size) {
-    @include span(12 last);
+    @include span(6 last);
+    text-align: right;
+    display: inline-block;
+  }
+}
+
+.accessibility-bar {
+  width: 100%;
+  text-align: center;
+  font-size: 8pt;
+  @media(min-width: $screen-mid-size) {
+    @include span(6);
+    text-align: left;
+    display: inline-block;
   }
 }
 
@@ -31,12 +44,21 @@
   display: inline-block;
   margin: 0 0 0 24px;
   padding: 0;
+
   .item {
     display: inline-block;
     margin-left: 13px;
     margin-right: 0;
     padding: 0;
+    &.first {
+      margin: 0;
+    }
   }
+
+  &.first {
+    margin: 0;
+  }
+
 }
 
 /*
@@ -49,7 +71,8 @@ Container das redes sociais
   }
 }
 
-//Icones
+/*  Icones sociais
+===========================*/
 .social {
   width: 22px;
   height: 22px;
@@ -61,6 +84,8 @@ Container das redes sociais
   background-position: center; 
   background-size: cover;
 }
+/*  Icones nas Revistas
+===========================*/
 .facebook {
   background: url("../images/facebook.png") no-repeat;
 }
@@ -75,26 +100,60 @@ Container das redes sociais
   background: url("../images/flikr-magazine.png") no-repeat;
 }
 
+/*  Icones no Portal
+===========================*/
+.portal {
+  background: red;
+  .facebook {
+    background: url("../images/facebook-portal.png") no-repeat;
+  }
+  .twitter {
+    background: url("../images/twitter-portal.png") no-repeat;
+  }
+  .youtube {
+    background: url("../images/youtube-portal.png") no-repeat;
+  }
+
+  .flikr {
+    background: url("../images/flikr-portal.png") no-repeat;
+  }
+}
+
 /*Container do header
 ============================*/
 .page-header {
-  padding-top: 15px;
-  // padding-bottom: 20px;
   @include clear();
+  padding-top: 15px;
+
+  &.portal {
+    background: linear-gradient(to top, #00510f, #17882c);
+  }
+
+  &.magazine {
+    background: #fff;
+  }
 }
 
 /*  Conteúdo central do header
 ============================*/
 .center-content {
   @include container;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: $header-padding-bottom;
   .header-logo {
     @include span(12);
-    min-height: 80px;
+    min-height: 90px;
     @media (min-width: $screen-mid-size) {
       @include span(6);
     }
+  }
+}
+
+.header-logo {
+  .page-name {
+    font-size: 36pt;
+    line-height: 30pt;
+    margin: 0;
   }
 }
 
@@ -110,6 +169,10 @@ Container das redes sociais
     text-align: right;
   }
 }
+.portal .actions-bar {
+  background: #01430c;
+}
+
 .magazine .actions-bar {
   background-image: linear-gradient(to bottom, #e8e8ea, #cfcec9); 
 }
@@ -157,6 +220,13 @@ Container das redes sociais
   }
 }
 
+.portal .form-login {
+  .btn-submit {
+    background: #fff;
+    color: $dark-green;
+  }
+}
+
 
 /*  Formulário de busca
 ============================*/
@@ -172,19 +242,22 @@ Container das redes sociais
 }
 
 .search-input-header {
-  @include span(11);
+  @include span(12);
   padding: 10px;
   border-radius: 5px;
   border: 1px solid $default-green;
   @media (min-width: $screen-mid-size) {
-    @include span(11);
+    @include span(12);
   }
 }
 
 .search-button {
-  @include span(1);
-  padding: 15px 0;
+  // @include span(1);
+  width: 37px;
+  // padding: 15px 0;
   background: url("../images/search-button.gif") no-repeat;
   background-position: center center;
   border: 0;
+  height: 40px;
+  margin-left: -40px;
 }
