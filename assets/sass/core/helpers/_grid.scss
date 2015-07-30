@@ -39,11 +39,10 @@
   }
 }
 
-.image-responsible {
-  width: 100%;
-}
-
 @media (max-width: $screen-mid-size) {
+  .xs-6 {
+    @include span(6);
+  }  
   .xs-1 {
     @include span(12);
   }  

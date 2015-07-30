@@ -17,7 +17,12 @@
       border-color: $blue;
       color: $blue;
     }
+    &.alert {
+      border-color: $red;
+      color: $red;
+    }
   }
+
   .footer-box {
     @extend %footer;
     @include span(12);
@@ -25,6 +30,11 @@
     text-align: right;
     padding: 10px;
     margin-top: 20px;
+
+    &.alert {
+      border-color: $red;
+      padding: 0;
+    }
 
     a {
       color: inherit;
@@ -53,4 +63,79 @@
     text-decoration: none;
   }
   color: $text;
+}
+
+
+/*  Barra de ferramentas
+=====================================*/
+.tool-bar {
+  @include clear();
+  width: 100%;
+  
+  .tool-align {
+    padding-top: 10px;
+  }
+  .tool-item {
+    display: block;
+    font-size: 10pt;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 0 10px 25px;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+
+    &.print {
+      background-image: url("../images/impressora.png");
+      padding-left: 27px;
+    }
+
+    &.metadata {
+      background-image: url("../images/metadados.png");
+    }
+
+    &.document {
+      background-image: url("../images/documento.png");
+    }
+  }
+}
+
+/*  Caixa default reutilizavel
+=====================================*/
+
+.default-box {
+  @include clear();
+  color: $text-dark-grey;
+
+  .text-right {
+    text-align: right;
+  }
+
+  .header-box {
+    width: 100%;
+    background: $grey;
+    font-size: 18pt;
+    padding: 15px;
+    border-bottom: 1px solid $text-dark-grey;
+  }
+
+  .footer-box {
+    width: 100%;
+    font-size: 18pt;
+    padding: 5px 15px 15px 15px;
+    background: $grey;
+    border-top: 1px solid $boder-ligthen-grey;
+  }
+
+  fieldset {
+    background: $grey;
+    padding: 5px 15px !important;
+
+    input[type='checkbox'] {
+      margin: 5px 5px 5px 0;
+    }
+
+    .label-header {
+      font-weight: bold;
+    }
+  }
 }
