@@ -7,6 +7,12 @@
       @include span(8 last);
     }
   }
+  .mid-7 {
+    @include span(7);
+    &.last {
+      @include span(7 last);
+    }
+  }  
   .mid-6 {
     @include span(6);
     &.last {
@@ -35,6 +41,12 @@
     @include span(2);
     &.last {
       @include span(2 last);
+    }
+  }
+  .mid-1 {
+    @include span(1);
+    &.last {
+      @include span(1 last);
     }
   }
 }

@@ -63,3 +63,33 @@
   float: right;
   width: auto !important;
 }
+
+/*  Barra padrão do governo
+===========================*/
+.government-bar {
+  @include clear();
+  background: $grey;
+  font-size: 9pt;
+
+  a {
+    padding: 7px 5px;
+    color: $text-grey;
+    border-right: 1px solid $boder-ligthen-grey;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+
+    &:nth-child(1n+3) {
+      text-align: center;
+    }
+  }
+
+  .brazil-flag {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAMAAAC5m+00AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACrUExURQCXSF27iQCWRQOWSQCWSRCdVACSSgCWRwCVSRKcVv/oAP/yAAIvh/bjBQKVTP/rAK3PF/3sARZBkg05ima2LCqiPg+ZRR9JoermBbGwLwEqkgCST1GwMRqdQZfIHdzgCSdSlTlYbEWrNyNKeouUPHOgtEJsn2WOrSClX2m/lF+6i3q8JsDVEBpCgWN2WefTD8i/IYSstzKmO3eIUaa2h3SOjfvlHjVfq6OmNShvDYIAAAFISURBVCjPbVHXksMgDNQBljC4l9iOndjp5VKv//+XnXByb7fDADO7rNAK9v4DngPv/h/24BHBuEhqB3pCeUxJIAWKtMZlIVCTciogH3yhWMpinM2t7ZctS5UgAR74kVICpMauNrfmaucTpMj5e+4VUNTOEvuzCoL8EvZLJCH1SIHAqKjtehowposwTmbIcqZIt+UpNV/3zWa3HYLp2sZ1gegoPXkNU5M238Ow3d132cIYEyel9MHDLo2NcX4519puPkPmbOIowrdTbGyTZXk2BEH1kZo4LPSjFgq2DFcVc3lWNZbt2rGWIIiwTOztzJZV9W77glCp8RsSNHdc1NfL6rxoxp5JCcmUC1cJjdx0GKZ1hxq0eqYBkuPlzLHrjXuiOAwaDUGQFJyWBpyU7EUaQI/xckGeA98jksqNQLmp8BnB4Xh8+ReHX640GNLt25uiAAAAAElFTkSuQmCC");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    padding-left: 30px;
+    padding-right: 30px; 
+    text-transform: uppercase;
+  }
+}

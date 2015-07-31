@@ -62,7 +62,7 @@
 
 /* Slide
 ========================*/
-/* line 13, ../sass/core/modules/general/_items.scss */
+/* line 14, ../sass/core/modules/general/_items.scss */
 .fotorama__caption__wrap {
   font-weight: bold;
   background-color: #fff;
@@ -73,12 +73,12 @@
   padding: 15px;
 }
 
-/* line 23, ../sass/core/modules/general/_items.scss */
+/* line 24, ../sass/core/modules/general/_items.scss */
 .fotorama__nav--dots .fotorama__nav__frame {
   background: #1f6012;
   padding: 0 4px;
 }
-/* line 27, ../sass/core/modules/general/_items.scss */
+/* line 28, ../sass/core/modules/general/_items.scss */
 .fotorama__nav--dots .fotorama__nav__frame .fotorama__dot {
   background: #fff;
   display: block;
@@ -90,11 +90,11 @@
   border-radius: 6px;
   border: 1px solid #fff;
 }
-/* line 39, ../sass/core/modules/general/_items.scss */
+/* line 40, ../sass/core/modules/general/_items.scss */
 .fotorama__nav--dots .fotorama__nav__frame.fotorama__active {
   background: #ffb400;
 }
-/* line 41, ../sass/core/modules/general/_items.scss */
+/* line 42, ../sass/core/modules/general/_items.scss */
 .fotorama__nav--dots .fotorama__nav__frame.fotorama__active .fotorama__dot {
   background: #1f6012;
   display: block;
@@ -107,16 +107,53 @@
   border: 1px solid #1f6012;
 }
 
-/* line 56, ../sass/core/modules/general/_items.scss */
+/* line 57, ../sass/core/modules/general/_items.scss */
 .fotorama__nav-wrap {
   margin-top: -30px;
   float: right;
 }
 
-/* line 61, ../sass/core/modules/general/_items.scss */
+/* line 62, ../sass/core/modules/general/_items.scss */
 .fotorama__nav .fotorama__nav--dots {
   float: right;
   width: auto !important;
+}
+
+/*  Barra padrão do governo
+===========================*/
+/* line 69, ../sass/core/modules/general/_items.scss */
+.government-bar {
+  background: #edeff1;
+  font-size: 9pt;
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.government-bar:after, .government-bar:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 74, ../sass/core/modules/general/_items.scss */
+.government-bar a {
+  padding: 7px 5px;
+  color: #5d5d5d;
+  border-right: 1px solid #d6dcd7;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+/* line 82, ../sass/core/modules/general/_items.scss */
+.government-bar a:nth-child(1n+3) {
+  text-align: center;
+}
+/* line 87, ../sass/core/modules/general/_items.scss */
+.government-bar .brazil-flag {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAMAAAC5m+00AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACrUExURQCXSF27iQCWRQOWSQCWSRCdVACSSgCWRwCVSRKcVv/oAP/yAAIvh/bjBQKVTP/rAK3PF/3sARZBkg05ima2LCqiPg+ZRR9JoermBbGwLwEqkgCST1GwMRqdQZfIHdzgCSdSlTlYbEWrNyNKeouUPHOgtEJsn2WOrSClX2m/lF+6i3q8JsDVEBpCgWN2WefTD8i/IYSstzKmO3eIUaa2h3SOjfvlHjVfq6OmNShvDYIAAAFISURBVCjPbVHXksMgDNQBljC4l9iOndjp5VKv//+XnXByb7fDADO7rNAK9v4DngPv/h/24BHBuEhqB3pCeUxJIAWKtMZlIVCTciogH3yhWMpinM2t7ZctS5UgAR74kVICpMauNrfmaucTpMj5e+4VUNTOEvuzCoL8EvZLJCH1SIHAqKjtehowposwTmbIcqZIt+UpNV/3zWa3HYLp2sZ1gegoPXkNU5M238Ow3d132cIYEyel9MHDLo2NcX4519puPkPmbOIowrdTbGyTZXk2BEH1kZo4LPSjFgq2DFcVc3lWNZbt2rGWIIiwTOztzJZV9W77glCp8RsSNHdc1NfL6rxoxp5JCcmUC1cJjdx0GKZ1hxq0eqYBkuPlzLHrjXuiOAwaDUGQFJyWBpyU7EUaQI/xckGeA98jksqNQLmp8BnB4Xh8+ReHX640GNLt25uiAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-transform: uppercase;
 }
 
 /*  Itens reutilizaveis
@@ -699,13 +736,28 @@
   }
 
   /* line 10, ../sass/core/helpers/_grid.scss */
+  .mid-7 {
+    width: 58.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 12, ../sass/core/helpers/_grid.scss */
+  .mid-7.last {
+    width: 58.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 16, ../sass/core/helpers/_grid.scss */
   .mid-6 {
     width: 50%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 12, ../sass/core/helpers/_grid.scss */
+  /* line 18, ../sass/core/helpers/_grid.scss */
   .mid-6.last {
     width: 50%;
     float: right;
@@ -713,14 +765,14 @@
     padding-right: 0.83333%;
   }
 
-  /* line 16, ../sass/core/helpers/_grid.scss */
+  /* line 22, ../sass/core/helpers/_grid.scss */
   .mid-5 {
     width: 41.66667%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 18, ../sass/core/helpers/_grid.scss */
+  /* line 24, ../sass/core/helpers/_grid.scss */
   .mid-5.last {
     width: 41.66667%;
     float: right;
@@ -728,14 +780,14 @@
     padding-right: 0.83333%;
   }
 
-  /* line 22, ../sass/core/helpers/_grid.scss */
+  /* line 28, ../sass/core/helpers/_grid.scss */
   .mid-4 {
     width: 33.33333%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 24, ../sass/core/helpers/_grid.scss */
+  /* line 30, ../sass/core/helpers/_grid.scss */
   .mid-4.last {
     width: 33.33333%;
     float: right;
@@ -743,14 +795,14 @@
     padding-right: 0.83333%;
   }
 
-  /* line 28, ../sass/core/helpers/_grid.scss */
+  /* line 34, ../sass/core/helpers/_grid.scss */
   .mid-3 {
     width: 25%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 30, ../sass/core/helpers/_grid.scss */
+  /* line 36, ../sass/core/helpers/_grid.scss */
   .mid-3.last {
     width: 25%;
     float: right;
@@ -758,23 +810,38 @@
     padding-right: 0.83333%;
   }
 
-  /* line 34, ../sass/core/helpers/_grid.scss */
+  /* line 40, ../sass/core/helpers/_grid.scss */
   .mid-2 {
     width: 16.66667%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 36, ../sass/core/helpers/_grid.scss */
+  /* line 42, ../sass/core/helpers/_grid.scss */
   .mid-2.last {
     width: 16.66667%;
     float: right;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
+
+  /* line 46, ../sass/core/helpers/_grid.scss */
+  .mid-1 {
+    width: 8.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 48, ../sass/core/helpers/_grid.scss */
+  .mid-1.last {
+    width: 8.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
 }
 @media (max-width: 768px) {
-  /* line 43, ../sass/core/helpers/_grid.scss */
+  /* line 55, ../sass/core/helpers/_grid.scss */
   .xs-6 {
     width: 50%;
     float: left;
@@ -782,7 +849,7 @@
     padding-right: 0.83333%;
   }
 
-  /* line 46, ../sass/core/helpers/_grid.scss */
+  /* line 58, ../sass/core/helpers/_grid.scss */
   .xs-1 {
     width: 100%;
     float: left;
@@ -1280,13 +1347,24 @@ Container das redes sociais
   list-style: none;
   display: block;
 }
-/* line 43, ../sass/core/containers/_footer.scss */
+/* line 42, ../sass/core/containers/_footer.scss */
+.footer-box .title a,
+.footer-box .item a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 45, ../sass/core/containers/_footer.scss */
+.footer-box .title a:hover,
+.footer-box .item a:hover {
+  text-decoration: underline;
+}
+/* line 51, ../sass/core/containers/_footer.scss */
 .footer-box .item {
   font-size: 9pt;
   padding-bottom: 5px;
   display: block;
 }
-/* line 50, ../sass/core/containers/_footer.scss */
+/* line 58, ../sass/core/containers/_footer.scss */
 .footer-box .footer-box {
   width: 100%;
   margin-top: 20px;
