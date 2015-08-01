@@ -65,7 +65,7 @@
 Container das redes sociais
 ============================*/
 .media-container {
-  margin-top: -($header-padding-bottom + 20px); //tirando do fluxo
+  margin-top: -($header-padding-bottom); //tirando do fluxo
   @media(min-width: $screen-mid-size) {
     @include span(4 last);
   }
@@ -139,7 +139,7 @@ Container das redes sociais
 .center-content {
   @include container;
   padding-top: 30px;
-  padding-bottom: $header-padding-bottom;
+  // padding-bottom: $header-padding-bottom;
   .header-logo {
     @include span(12);
     min-height: 90px;
@@ -150,6 +150,9 @@ Container das redes sociais
 }
 
 .header-logo {
+  span {
+    font-size: 9pt;
+  }
   .page-name {
     font-size: 36pt;
     line-height: 30pt;
@@ -192,6 +195,7 @@ Container das redes sociais
   }
 
   input {
+    color: $text-dark-grey;
     padding: 0 3px;
     font-size: 9pt;
     border: 0;
@@ -235,8 +239,10 @@ Container das redes sociais
   text-align: right;
   margin-top: 20px;
   margin-bottom: 5px;
+  color: $text-dark-grey;
+  font-size: 9pt;
   @media (min-width: $screen-mid-size) {
-    @include span(5 last);
+    @include span(4 last);
   }
   @include clear();
 }
