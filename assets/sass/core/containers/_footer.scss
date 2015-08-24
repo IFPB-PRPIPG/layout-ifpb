@@ -2,6 +2,12 @@
   @include clear();
   background: $default-green;
   color: #fff;
+  padding-top: 10px;
+
+  &.repositorio {
+    background: $grey-light-default;
+    color: $green-dark-default;
+  }
 }
 
 .sub-footer {

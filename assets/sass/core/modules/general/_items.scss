@@ -70,6 +70,9 @@
   @include clear();
   background: $grey;
   font-size: 9pt;
+  &.repositorio {
+    border-bottom: 1px solid $green-dark-default;
+  }
 
   a {
     padding: 7px 5px;

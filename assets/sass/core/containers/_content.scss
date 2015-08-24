@@ -5,3 +5,13 @@
     @include span(9 last);
   }
 }
+
+.main-content-block {
+  @media (min-width: $screen-mid-size) {
+    @include span(12);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }	
+}

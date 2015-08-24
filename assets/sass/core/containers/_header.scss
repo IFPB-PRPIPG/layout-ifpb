@@ -14,6 +14,14 @@
   }
 }
 
+.repositorio {
+  color: $green-dark-default;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
 //Barra de idiomas
 .language-bar {
   width: 100%;
@@ -132,6 +140,10 @@ Container das redes sociais
   &.magazine {
     background: #fff;
   }
+
+  &.repositorio {
+    background: $grey-light-default;
+  }
 }
 
 /*  Conteúdo central do header
@@ -152,11 +164,15 @@ Container das redes sociais
 .header-logo {
   span {
     font-size: 9pt;
+    text-transform: uppercase;
   }
   .page-name {
     font-size: 36pt;
-    line-height: 30pt;
+    line-height: 36pt;
     margin: 0;
+    &.default {
+      line-height: 50pt;
+    }
   }
 }
 
@@ -180,6 +196,32 @@ Container das redes sociais
   background-image: linear-gradient(to bottom, #e8e8ea, #cfcec9); 
 }
 
+.repositorio .actions-bar {
+  background: linear-gradient(to bottom, $grey-light-option, $grey-light-option 80%, $grey-medium-option);
+}
+
+/*  Lista do menu superior (action)
+============================*/
+.actions-bar .list-menu {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: block;
+
+  .item {
+    display: inline-block;
+    border-right: 1px solid $grey-medium-border;
+    padding: 0 8px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border: 0;
+      padding-right: 0;
+    }
+  }
+
+}
 /*  Formulário de login
 ============================*/
 .form-login {
@@ -191,6 +233,7 @@ Container das redes sociais
     display: block;
     @media (min-width: $screen-mid-size) {
       display: inline-block;
+      width: 37%;
     }
   }
 
@@ -205,7 +248,7 @@ Container das redes sociais
     display: block;
     @media (min-width: $screen-mid-size) {
       display: inline-block;
-      width: auto;
+      width: 75%;
     }
   }
 

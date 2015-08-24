@@ -3,6 +3,7 @@
 .form-control {
   display: block;
   @include clear();
+  font-size: 13pt;
 
   fieldset {
     border: 0;
@@ -20,8 +21,18 @@
   }
 }
 
+/*  Formulário (element-box)
+======================*/
+.form-control-element {
+  @extend .form-control;
+  padding: 10px;
+}
+
+/*  Form-default color
+======================*/
 .form-control-default {
   @include span(12);
+  font-size: 13pt;
   background: $grey;
   padding: 10px;
   margin-bottom: 20px;
