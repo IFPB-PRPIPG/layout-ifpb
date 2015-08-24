@@ -18,6 +18,11 @@
     h3 [title]
   .footer-box
 
+###Caixa com elemento interno
+.element-box
+  .header-box 
+    > title
+    
 #Bordas
 .boder-box [Fim da caixa]
 .border-title-light [A baixo do titulo, light]
