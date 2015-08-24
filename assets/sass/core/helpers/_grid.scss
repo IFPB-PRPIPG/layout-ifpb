@@ -1,6 +1,30 @@
 /*  Colunas utilizaveis em caixas
 =====================================*/
 @media (min-width: $screen-mid-size) {
+  .mid-12 {
+    @include span(12);
+    &.last {
+      @include span(12 last);
+    }
+  }
+  .mid-11 {
+    @include span(11);
+    &.last {
+      @include span(11 last);
+    }
+  }
+  .mid-10 {
+    @include span(10);
+    &.last {
+      @include span(10 last);
+    }
+  }
+  .mid-9 {
+    @include span(9);
+    &.last {
+      @include span(9 last);
+    }
+  }
   .mid-8 {
     @include span(8);
     &.last {
@@ -15,6 +39,11 @@
   }  
   .mid-6 {
     @include span(6);
+    &.first {
+      @include span(6);
+      margin-left: 0;
+      padding-left: 0;
+    }
     &.last {
       @include span(6 last);
     }
