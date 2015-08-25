@@ -1,6 +1,9 @@
 /*  Colunas utilizaveis em caixas
 =====================================*/
 @media (min-width: $screen-mid-size) {
+  div > .mid-4:nth-child(4n) {
+    clear: left;
+  }
   .mid-12 {
     @include span(12);
     &.last {
@@ -81,9 +84,24 @@
 }
 
 @media (max-width: $screen-mid-size) {
+  div > .xs-6:nth-child(2n) {
+    clear: right;
+  }
   .xs-6 {
     @include span(6);
+  }
+  .xs-5 {
+    @include span(5);
+  }
+  .xs-4 {
+    @include span(4);
   }  
+  .xs-3 {
+    @include span(3);
+  }
+  .xs-2 {
+    @include span(2);
+  }
   .xs-1 {
     @include span(12);
   }  
