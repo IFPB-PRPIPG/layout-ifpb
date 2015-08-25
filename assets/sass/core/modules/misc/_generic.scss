@@ -1,0 +1,20 @@
+/*  Imagen
+======================*/
+.img-float-left {
+  float: left;
+  margin: 10px;
+}
+.img-frame {
+  border: 1px solid $boder-ligthen-grey;
+}
+
+/*  Bordas
+======================*/
+.border-box {
+  padding-bottom: 45px;
+  border-bottom: 5px solid $default-green;
+}
+.border-title-light {
+  border-bottom: 1px solid $boder-ligthen-grey;
+  padding-bottom: 15px;
+}

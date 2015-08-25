@@ -1,5 +1,5 @@
-/*  Caixa de elemento
-======================*/
+/*  Caixa para elemento interno
+=====================================*/
 .element-box {
   background: $grey;
   margin-bottom: 30px;
@@ -16,83 +16,158 @@
   }
 }
 
-/*  Busca personalizada
-======================*/
-.form-custom-search {
-  .input-control {
-    @include span(4);
-    @media (min-width: $screen-mid-size) {
-      @include span(8);
+/*  Caixa de texto externa
+=====================================*/
+.text-box {
+  display: block;
+  @include clear;
+  .header-title {
+    @extend %text-box-title;
+    &.large-size {
+      font-size: 28pt;
     }
-    padding-right: 0;
-    border-right: 0;
-    border-radius: 5px 0 0 5px;
+    &.mid-size {
+      font-size: 18pt;
+    }
+  }
+  .header-subtitle {
+    @extend %text-box-subtitle;
+    margin-top: 30px;
   }
 
-  .list-input-custom {
-    @include span(8);
-    @media (min-width: $screen-mid-size) {
-      @include span(4);
-    }
-    border-top: 1px solid $boder-ligthen-grey;
-    border-bottom: 1px solid $boder-ligthen-grey;
-    border-right: 1px solid $boder-ligthen-grey;
-    border-left: 0;
-    display: block;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    text-align: right;
-    border-radius: 0 5px 5px 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
 
-    .item {
-      display: inline-block;
-      padding: 4px 10px;
-      margin: 4px 0;
-      border-left: 1px solid $boder-ligthen-grey;
-      font-weight: lighter;
 
-      &:first-child {
-        padding-right: 0;
-      }
-      &:last-child {
-        padding: 0 10px;
-        margin: 0;
-      }
-
-      .button-search {
-        background: url("../images/search-button.gif") no-repeat;
-        background-position: center center;
-        // padding: 8px 10px;
-        height: 20px;
-        width: 20px;
-        border: 0;
-      }
-
-      .search-type input[type="checkbox"] {
-        display: none;
-      }
-
-      .search-type input:checked ~ span {
-        font-weight: bold;
-        font-size: 12pt;
-      }
-    }
+/*  Caixa de texto interna
+=====================================*/
+.text-box-content {
+  @include clear();
+}
+.text-box-title  {
+  color: $text;
+  &.large-size {
+    font-size: 28pt;
+  }
+  &.mid-size {
+    font-size: 18pt;
   }
 }
 
 
-/*  Ícones de comunidades
-======================*/
-.community-icons {
+/*  Caixas de conteúdo reutilizável
+=====================================*/
+.content-box {
+  padding-bottom: 30px;
   @include clear();
-  
-  & > div {
-    padding-bottom: 1.66666%;
+  .header-box {
+    @extend %header;
+    @include span(12);
+    padding-top: 5px;
+    padding-left: 8px;
+    min-height: 64px;
+    font-size: 20pt;
+    font-weight: lighter;
+    text-transform: none;
+    margin-bottom: 20px;
+    &.default {
+      border-color: $blue;
+      color: $blue;
+    }
+    &.alert {
+      border-color: $red;
+      color: $red;
+    }
   }
 
-  & img {
-    display: block;
-    margin: 0 auto;
+  .footer-box {
+    @extend %footer;
+    @include span(12);
+    font-size: 8pt;
+    text-align: right;
+    padding: 10px;
+    margin-top: 20px;
+
+    &.alert {
+      border-color: $red;
+      padding: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      padding-right: 20px;
+    }
+    .footer-content {
+      background: url("../images/footer-seta.png") no-repeat;
+      background-position: right;
+      padding: 5px;
+    }
+  }
+}
+
+/*  Estilo da caixa de conteúdo
+=====================================*/
+.content-box {
+  h3 {
+    font-size: 14pt;
+  }
+  p {
+    font-size: 11pt;
+    word-wrap: break-word;
+  }
+  a {
+    color: $text;
+    text-decoration: none;
+  }
+
+  .small-type {
+    color: $default-green;
+    font-size: 9pt;
+    font-weight: bold;
+  }
+  color: $text;
+}
+
+/*  Caixa default reutilizavel
+=====================================*/
+
+.default-box {
+  @include clear();
+  color: $text-dark-grey;
+
+  .text-right {
+    text-align: right;
+  }
+
+  .header-box {
+    width: 100%;
+    background: $grey;
+    font-size: 18pt;
+    padding: 15px;
+    border-bottom: 1px solid $text-dark-grey;
+  }
+
+  .footer-box {
+    width: 100%;
+    font-size: 18pt;
+    padding: 5px 15px 15px 15px;
+    background: $grey;
+    border-top: 1px solid $boder-ligthen-grey;
+  }
+
+  fieldset {
+    background: $grey;
+    padding: 5px 15px !important;
+
+    input[type='checkbox'] {
+      margin: 5px 5px 5px 0;
+    }
+
+    .label-header {
+      font-weight: bold;
+    }
   }
 }

@@ -18,17 +18,6 @@
   padding-right: 10px;
 }
 
-// .content-box {
-//   .header-box {
-//     @extend %header;
-//   }
-
-//   color: $text;
-
-//   .footer-box {
-//     @extend %footer;
-//   }
-// }
 
 /*  Formulários
 ======================*/
@@ -46,28 +35,8 @@
   text-decoration: none;
 }
 
-/*  Imagen
-======================*/
-.img-float-left {
-  float: left;
-  margin: 10px;
-}
-.img-frame {
-  border: 1px solid $boder-ligthen-grey;
-}
 
-/*  Bordas
-======================*/
-.border-box {
-  padding-bottom: 45px;
-  border-bottom: 5px solid $default-green;
-}
-.border-title-light {
-  border-bottom: 1px solid $boder-ligthen-grey;
-  padding-bottom: 15px;
-}
 
-@import "containers";
 @import "texts";
 @import "lists";
 @import "buttons";
