@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Portal de periódicos do IFPB - Praxis</title>
+  <title>Repositório digital do IFPB - Praxis</title>
   <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
   <link rel="stylesheet" href="assets/stylesheets/style.css">
@@ -63,10 +63,18 @@
         <div class="content-container">
           <div class="mid-5">
             <ul class="list-menu">
-              <li class="item">Apresentação</li>
-              <li class="item">Política</li>
-              <li class="item">Informações ao usuário</li>
-              <li class="item">Contato</li>
+              <li class="item">
+                <a href="#">Apresentação</a>
+              </li>
+              <li class="item">
+                <a href="#">Política</a>
+              </li>
+              <li class="item">
+                <a href="#">Informações ao usuário</a>
+              </li>
+              <li class="item">
+                <a href="#">Contato</a>
+              </li>
             </ul>
           </div>
           <div class="mid-7">
@@ -86,7 +94,7 @@
 
     <div class="page-breadcrumb">
       <div class="content-container">
-        <span>Você está aqui: <a href="#">Página inicial > Praxis</a></span>
+        <span>Você está aqui: <a href="#">Página inicial</a></span>
       </div>
     </div>
     
@@ -108,43 +116,73 @@
         <main class="main-content-block">
 
           <!-- Caixa de pesquisa -->
-          <div class="element-box">
-            <div class="header-box">Pesquisa</div>
-            <form action="#" class="form-control-element">
-              <input type="text" class="input-control">
-            </form>
+          <div class="mid-12">
+            <div class="element-box">
+              <div class="header-box">Pesquisa</div>
+              <form action="#" class="form-custom-search">
+                <input type="text" class="input-control" placeholder="Faça aqui sua pesquisa">
+                <ul class="list-input-custom">
+                  <li class="item">
+                    <label class="search-type">
+                      <input type="checkbox"/>
+                      <span>Autor</span>
+                    </label>
+                  </li>
+                  <li class="item">
+                    <label class="search-type">
+                      <input type="checkbox"/>
+                      <span>Título</span>
+                    </label>
+                  </li>
+                  <li class="item">
+                    <input type="submit" class="button-search" value="">
+                  </li>
+                </ul>
+              </form>
+            </div>
           </div>
 
           <!-- Menu de pesquisa gráfico (escolha de comunidade) -->
-          <div class="xs-12 mid-6 first">
+          <div class="xs-12 mid-6">
             <div class="community-icons">
-              <div class="mid-4">
-                <img class="img-responsible" src="assets/images/teses.png">
+              <div class="xs-6 mid-4">
+                <a href="#">
+                  <img class="img-responsible" src="assets/images/teses.png">
+                </a>
               </div> 
-              <div class="mid-4">
-                <img class="img-responsible" src="assets/images/eventos.png">
+              <div class="xs-6 mid-4">
+                <a href="#">
+                  <img class="img-responsible" src="assets/images/eventos.png">
+                </a>
               </div>
-              <div class="mid-4">
-                <img class="img-responsible" src="assets/images/acervo.png">
-              </div> 
-            </div>
-            <div class="community-icons">
-              <div class="mid-4">
-                <img class="img-responsible" src="assets/images/teses.png">
-              </div> 
-              <div class="mid-4">
-                <img class="img-responsible" src="assets/images/producao.png">
+              <div class="xs-6 mid-4">
+                <a href="#">
+                  <img class="img-responsible" src="assets/images/acervo.png">
+                </a>
               </div>
-              <div class="mid-4">
-                <img class="img-responsible" src="assets/images/trabalhos.png">
+              <div class="xs-6 mid-4">
+                <a href="#">
+                  <img class="img-responsible" src="assets/images/teses.png">
+                </a>
+              </div> 
+              <div class="xs-6 mid-4">
+                <a href="#">
+                  <img class="img-responsible" src="assets/images/producao.png">
+                </a>
+              </div>
+              <div class="xs-6 mid-4">
+                <a href="#">
+                  <img class="img-responsible" src="assets/images/trabalhos.png">
+                </a>
               </div> 
             </div>
           </div>
-          <div class="mid-6 last">
+          <!-- slider -->
+          <div class="mid-6">
             <div class="slide-content">
               <div class="fotorama" data-autoplay="true" data-arrows="false" data-navwidth="15%" data-width="100%" data-maxheight="300">
-                <img src="1.jpg" data-caption="Bem vindo ao portal de periódicos do IFPB">
-                <img src="http://s.fotorama.io/2.jpg" data-caption="Bem vindo ao portal de periódicos do IFPB">
+                <img src="http://brejo.com/wp-content/uploads/2012/08/IFPB_GUARABIRA.jpg" data-caption="Título da primeira imagem">
+                <img src="http://romulogondim.com.br/v2/wp-content/uploads/2012/05/reuniao-consuper.jpg" data-caption="Título da segunda imagem">
               </div>
             </div>
           </div>

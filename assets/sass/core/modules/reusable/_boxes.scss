@@ -3,7 +3,7 @@
 .element-box {
   background: $grey;
   margin-bottom: 30px;
-	.header-box {
+  .header-box {
     @extend %header;
     @include span(12);
     padding-top: 5px;
@@ -16,11 +16,79 @@
   }
 }
 
+/*  Busca personalizada
+======================*/
+.form-custom-search {
+  .input-control {
+    @include span(4);
+    @media (min-width: $screen-mid-size) {
+      @include span(8);
+    }
+    padding-right: 0;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .list-input-custom {
+    @include span(8);
+    @media (min-width: $screen-mid-size) {
+      @include span(4);
+    }
+    border-top: 1px solid $boder-ligthen-grey;
+    border-bottom: 1px solid $boder-ligthen-grey;
+    border-right: 1px solid $boder-ligthen-grey;
+    border-left: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    text-align: right;
+    border-radius: 0 5px 5px 0;
+
+    .item {
+      display: inline-block;
+      padding: 4px 10px;
+      margin: 4px 0;
+      border-left: 1px solid $boder-ligthen-grey;
+      font-weight: lighter;
+
+      &:first-child {
+        padding-right: 0;
+      }
+      &:last-child {
+        padding: 0 10px;
+        margin: 0;
+      }
+
+      .button-search {
+        background: url("../images/search-button.gif") no-repeat;
+        background-position: center center;
+        padding: 8px 10px;
+        border: 0;
+      }
+
+      .search-type input[type="checkbox"] {
+        display: none;
+      }
+
+      .search-type input:checked ~ span {
+        font-weight: bold;
+        font-size: 12pt;
+      }
+    }
+  }
+}
+
+
 /*  Ícones de comunidades
 ======================*/
 .community-icons {
   @include clear();
-  padding-bottom: 1.66666%;
+  
+  & > div {
+    padding-bottom: 1.66666%;
+  }
+
   & img {
     display: block;
     margin: 0 auto;

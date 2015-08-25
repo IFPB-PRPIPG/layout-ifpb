@@ -1,8 +1,10 @@
 .page-footer {
+  @include span(12);
   @include clear();
   background: $default-green;
   color: #fff;
-  padding-top: 10px;
+  padding: 10px 0;
+  margin-top: 30px;
 
   &.repositorio {
     background: $grey-light-default;
@@ -26,7 +28,11 @@
 
 .footer-box {
   display: inline-block;
-  @include span(3);
+  @include span(12);
+  @media (min-width: $screen-mid-size) {
+    @include span(3);
+    text-align: left;
+  }
   @include clear();
 
 
