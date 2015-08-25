@@ -8,8 +8,13 @@
   padding: 0 15px;
   @media(min-width: $screen-mid-size) {
     width: $page-container-size;
+    padding: 0 15px;
+  }
+  @media(min-width: $screen-large-size) {
+    width: $page-container-size;
     padding: 0;
   }
+
 }
 
 
