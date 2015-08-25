@@ -63,7 +63,9 @@
       .button-search {
         background: url("../images/search-button.gif") no-repeat;
         background-position: center center;
-        padding: 8px 10px;
+        // padding: 8px 10px;
+        height: 20px;
+        width: 20px;
         border: 0;
       }
 
