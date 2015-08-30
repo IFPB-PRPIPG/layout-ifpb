@@ -111,7 +111,6 @@ Container das redes sociais
 /*  Icones no Portal
 ===========================*/
 .portal {
-  background: red;
   .facebook {
     background: url("../images/facebook-portal.png") no-repeat;
   }
@@ -126,6 +125,25 @@ Container das redes sociais
     background: url("../images/flikr-portal.png") no-repeat;
   }
 }
+
+/*  Icones no Repositório
+===========================*/
+.repositorio {
+  .facebook {
+    background: url("../images/icons/facebookrepo.png") no-repeat;
+  }
+  .twitter {
+    background: url("../images/icons/twitterrepo.png") no-repeat;
+  }
+  .youtube {
+    background: url("../images/icons/youtuberepo.png") no-repeat;
+  }
+
+  .feed {
+    background: url("../images/icons/feedrepo.png") no-repeat;
+  }
+}
+
 
 /*Container do header
 ============================*/

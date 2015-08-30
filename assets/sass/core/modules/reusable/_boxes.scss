@@ -3,8 +3,10 @@
 .element-box {
   background: $grey;
   margin-bottom: 30px;
+  @extend %header;
+  padding: 0;
+  @include clear();
   .header-box {
-    @extend %header;
     @include span(12);
     padding-top: 5px;
     padding-left: 10px;
@@ -13,6 +15,9 @@
     font-size: 20pt;
     font-weight: lighter;
     text-transform: none;
+  }
+  .element-container {
+    padding: 8px;
   }
 }
 
@@ -113,6 +118,29 @@
       background-position: right;
       padding: 5px;
     }
+    .footer-pagination {
+      display: inline-block;
+      .item {
+        display: inline-block;
+        margin: 0 8px;
+        a {
+          padding: 0;
+          text-decoration: underline;
+        }
+        .first {
+          padding-left: 25px;
+          background: url("../images/footer-seta.png") no-repeat;
+          background-position: left center;
+          text-decoration: none;
+        }
+        .last {
+          padding-right: 25px;
+          background: url("../images/footer-seta.png") no-repeat;
+          background-position: right center;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
@@ -129,6 +157,9 @@
   a {
     color: $text;
     text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .small-type {
@@ -144,7 +175,15 @@
 
 .default-box {
   @include clear();
+  font-size: 11pt;
   color: $text-dark-grey;
+  background: $grey;
+  padding: 10px;
+  border-radius: 5px;
+
+  a {
+    color: $text-dark-grey;
+  }
 
   .text-right {
     text-align: right;
@@ -152,18 +191,28 @@
 
   .header-box {
     width: 100%;
+    display: block;
     background: $grey;
-    font-size: 18pt;
-    padding: 15px;
+    font-size: 11pt;
     border-bottom: 1px solid $text-dark-grey;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
   }
 
   .footer-box {
     width: 100%;
-    font-size: 18pt;
-    padding: 5px 15px 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     background: $grey;
     border-top: 1px solid $boder-ligthen-grey;
+    .footer-title {
+      font-size: 11pt; 
+      text-transform: uppercase;
+      font-weight: bold;
+    }
   }
 
   fieldset {

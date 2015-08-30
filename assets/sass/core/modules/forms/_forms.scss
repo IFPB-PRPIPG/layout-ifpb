@@ -3,12 +3,14 @@
 .form-control {
   display: block;
   @include clear();
-  font-size: 13pt;
+  font-size: 11pt;
 
   fieldset {
     border: 0;
     margin: 0;
-    padding: 10px 0;
+    // padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     legend {
       font-size: 15pt;
       color: $text;
@@ -201,4 +203,119 @@
   border: 0;
   height: 40px;
   margin-left: -40px;
+}
+
+/*  Formulário de busca com icones no input
+=====================================*/
+.form-custom-search {
+  font-size: 12pt;
+  color: #000;
+  .input-control {
+    @include span(4);
+    @media (min-width: $screen-mid-size) {
+      @include span(8);
+    }
+    padding-right: 0;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  a {
+    color: $default-green;
+    text-decoration: none;
+  }
+
+  legend {
+    border: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .control-block {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+    @include clear();
+  }
+
+  //Input customizado:
+  //O input parece conter itens (máximo: 3), incluindo o botão de search
+  .list-input-custom {
+    @include span(8);
+    @media (min-width: $screen-mid-size) {
+      @include span(4);
+    }
+    border-top: 1px solid $boder-ligthen-grey;
+    border-bottom: 1px solid $boder-ligthen-grey;
+    border-right: 1px solid $boder-ligthen-grey;
+    border-left: 0;
+    display: block;
+    margin: 0;
+    padding: 8px 0;
+    background: #fff;
+    text-align: right;
+    border-radius: 0 5px 5px 0;
+
+    .item {
+      display: inline-block;
+      padding: 0 10px;
+      margin: 0;
+      border-left: 1px solid $boder-ligthen-grey;
+      font-weight: lighter;
+
+      &:first-child {
+        padding-right: 0;
+      }
+      &:last-child {
+        padding: 0 10px;
+        margin: 0;
+      }
+
+      .button-search {
+        background: url("../images/search-button.gif") no-repeat;
+        background-position: center center;
+        height: 20px;
+        width: 20px;
+        border: 0;
+      }
+
+      .search-type input[type="checkbox"] {
+        display: none;
+      }
+
+      .search-type input:checked ~ span {
+        font-weight: bold;
+        font-size: 12pt;
+      }
+    }
+  }
+
+  //Lista de opção de filtro
+  //para o input custom
+  .list-input-external {
+    @include span(12);
+    display: block;
+    margin: 0;
+    font-size: 10pt;
+
+    .item {
+      display: inline-block;
+      padding: 0 10px;
+      margin: 0;
+      font-weight: lighter;
+
+      a {
+        color: $default-green;
+        text-decoration: none;
+      }
+
+      .search-type input[type="checkbox"] {
+        display: none;
+      }
+
+      .search-type input:checked ~ span {
+        font-weight: bold;
+        font-size: 9pt;
+      }
+    }
+  }
 }

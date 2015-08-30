@@ -40,3 +40,40 @@
     }
   }
 }
+
+.page-sidebar .box {
+  .item {
+    &.i-search {
+      background: url(../images/icons/search.png);
+    }
+    &.i-books {
+      background: url(../images/icons/books.png);
+    }
+    &.i-calendar {
+      background: url(../images/icons/calendar.png);
+    }
+    &.i-science {
+      background: url(../images/icons/calendar.png);
+    }
+    &.i-academic {
+      background: url(../images/icons/calendar.png);
+    }
+    &.i-stackedbooks {
+      background: url(../images/icons/stackedbooks.png);
+    }
+
+    &.i-search, 
+    &.i-books,
+    &.i-calendar,
+    &.i-science,
+    &.i-academic,
+    &.i-stackedbooks {
+      background-repeat: no-repeat;
+      background-position: 5px center;
+      min-height: 36px;
+      padding-left: 50px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
