@@ -70,6 +70,10 @@
     text-align: left;
     font-size: 9pt;
     color: $text-magazine-color;
+    @media(min-width: $screen-mid-size){
+      border-right: 1px solid $boder-ligthen-grey;
+    }
+
     span {
       display: block;
       margin-bottom: 5px;
@@ -105,7 +109,6 @@
   }
   .text {
     color: $text;
-    border-left: 1px solid $boder-ligthen-grey;
     padding-left: 20px;
   }
 

@@ -113,77 +113,95 @@
       <div class="content-container">
         <!-- sidebar -->
         <!-- Meio -->
-        <main class="main-content-block">
+        <main class="main-content">
 
           <!-- Caixa de pesquisa -->
           <div class="mid-12">
+            <ul class="text-list">
+              <li class="text-list-menu">
+                <a href="#">Acervo</a>
+              </li>
+              <li class="text-list-menu">
+                <a class="active" href="#">Eventos</a>
+              </li>
+              <li class="text-list-menu">
+                <a href="#">Produção científica</a>
+              </li>
+              <li class="text-list-menu">
+                <a href="#">Teses e dissertações</a>
+              </li>
+              <li class="text-list-menu">
+                <a href="#">Trabalhos acadêmicos</a>
+              </li>
+            </ul>
             <div class="element-box">
-              <div class="header-box">Pesquisa</div>
               <form action="#" class="form-custom-search">
-                <input type="text" class="input-control" placeholder="Faça aqui sua pesquisa">
-                <ul class="list-input-custom">
-                  <li class="item">
-                    <label class="search-type">
-                      <input type="checkbox"/>
-                      <span>Autor</span>
-                    </label>
-                  </li>
-                  <li class="item">
-                    <label class="search-type">
-                      <input type="checkbox"/>
-                      <span>Título</span>
-                    </label>
-                  </li>
-                  <li class="item">
-                    <input type="submit" class="button-search" value="">
-                  </li>
-                </ul>
+                <div class="control-block">
+                  <fieldset class="mid-8">
+                    <input type="text" class="input-control" placeholder="Faça aqui sua pesquisa">
+                    <ul class="list-input-custom">
+                      <li class="item">
+                        <input type="submit" class="button-search" value="">
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="mid-4">
+                    <ul class="list-input-external">
+                      <li class="item">
+                        <label class="search-type">
+                          <input type="checkbox"/>
+                          <span>Autor</span>
+                        </label>
+                      </li>
+                      <li class="item">
+                        <label class="search-type">
+                          <input type="checkbox"/>
+                          <span>Título</span>
+                        </label>
+                      </li>
+                      <li class="item">
+                        <label class="search-type">
+                          <input type="checkbox"/>
+                          <span>Assunto</span>
+                        </label>
+                      </li>
+                      <li class="item">
+                        <a href="#">Ferramentas de Pesquisa</a>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="control-block">
+                  <fieldset class="mid-12">
+                    <legend>Filtro</legend>
+                    <div class="mid-6">
+                      <label class="label-control-block">Período de Publicação</label>
+                      <select name="noname" id="noid">
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                      </select>
+                    </div>
+                    <div class="mid-6">
+                      <label class="label-control-block">Período especifíco</label>
+                      <select name="noname" id="noid">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                      </select>
+                      <select name="noname" id="noid">
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                </div>
+                <div>
+                  <span>Resultado por página</span>
+                  <a href="#">10</a>-<a href="#">20</a>-<a href="#">30</a>
+                </div>
               </form>
-            </div>
-          </div>
-
-          <!-- Menu de pesquisa gráfico (escolha de comunidade) -->
-          <div class="xs-12 mid-6">
-            <div class="community-icons">
-              <div class="xs-6 mid-4">
-                <a class="community-disabled" href="#">
-                  <img class="img-responsible" src="assets/images/icons/teses.png">
-                </a>
-              </div> 
-              <div class="xs-6 mid-4">
-                <a class="community-active" href="#">
-                  <img class="img-responsible" src="assets/images/icons/eventos.png">
-                </a>
-              </div>
-              <div class="xs-6 mid-4">
-                <a class="community-active" href="#">
-                  <img class="img-responsible" src="assets/images/icons/acervo.png">
-                </a>
-              </div>
-              <div class="xs-6 mid-4">
-                <a class="community-active" href="#">
-                  <img class="img-responsible" src="assets/images/icons/teses.png">
-                </a>
-              </div> 
-              <div class="xs-6 mid-4">
-                <a class="community-active" href="#">
-                  <img class="img-responsible" src="assets/images/icons/producao.png">
-                </a>
-              </div>
-              <div class="xs-6 mid-4">
-                <a class="community-disabled" href="#">
-                  <img class="img-responsible" src="assets/images/icons/trabalhos.png">
-                </a>
-              </div> 
-            </div>
-          </div>
-          <!-- slider -->
-          <div class="mid-6 xs-hide">
-            <div class="slide-content">
-              <div class="fotorama" data-autoplay="true" data-arrows="false" data-navwidth="15%" data-width="100%" data-maxheight="300">
-                <img src="http://brejo.com/wp-content/uploads/2012/08/IFPB_GUARABIRA.jpg" data-caption="Título da primeira imagem">
-                <img src="http://romulogondim.com.br/v2/wp-content/uploads/2012/05/reuniao-consuper.jpg" data-caption="Título da segunda imagem">
-              </div>
             </div>
           </div>
         </main> <!-- /main-container -->

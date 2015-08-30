@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Repositório digital do IFPB - Praxis</title>
+  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
+  <link rel="stylesheet" href="assets/stylesheets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <div class="page-container">
+
+    <!-- header -->
+    <div class="government-bar repositorio">
+      <div class="content-container">
+        <a href="http://brasil.gov.br/" class="brazil-flag mid-1">Brasil</a>
+        <a href="http://brasil.gov.br/barra#acesso-informacao" class="mid-7">Acesso à informação</a>
+        <a href="http://brasil.gov.br/barra#participe" class="mid-1">Participe</a>
+        <a href="http://www.servicos.gov.br/?pk_campaign=barrabrasil" class="mid-1">Serviços</a>
+        <a href="http://www.planalto.gov.br/legislacao" class="mid-1">Legislação</a>
+        <a href="http://brasil.gov.br/barra#orgaos-atuacao-canais" class="mid-1">Canais</a>
+
+      </div>
+    </div>
+    <header class="page-header repositorio">
+      <div class="content-container">
+
+        <!-- barra de idiomas -->
+        <div class="language-bar">
+          <ul class="link-list">
+            <li class="item"><a href="#">Acessibilidade</a></li>
+            <li class="item"><a href="#">Contraste</a></li>
+            <li class="item"><a href="#">Mapa do site</a></li>
+          </ul>
+          <ul class="link-list">
+            <li class="item"><a href="#">English</a></li>
+            <li class="item"><a href="#">Español</a></li>
+          </ul>
+        </div>
+        
+        <!-- page logo -->
+        <div class="center-content">
+          <div class="header-logo">
+            <h1 class="page-name default">Repositório Digital</h1>
+            <span>Instituto Federal de educação, ciência e Tecnologia da Paraíba</span>
+          </div>
+        </div>
+
+        <!-- social media -->
+        <div class="media-container">
+          <div class="social feed"></div>
+          <div class="social youtube"></div>
+          <div class="social twitter"></div>
+          <div class="social facebook"></div>
+        </div>
+      </div>
+
+      <!-- actions-bar login/logout-->
+      <div class="actions-bar">
+        <div class="content-container">
+          <div class="mid-5">
+            <ul class="list-menu">
+              <li class="item">
+                <a href="#">Apresentação</a>
+              </li>
+              <li class="item">
+                <a href="#">Política</a>
+              </li>
+              <li class="item">
+                <a href="#">Informações ao usuário</a>
+              </li>
+              <li class="item">
+                <a href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mid-7">
+            <form class="form-control form-login" action="#">
+              <label for="login">Login
+                <input id="login" type="text">
+              </label>
+              <label for="password">Senha
+                <input id="password" type="password">
+              </label>
+              <button class="btn btn-submit">Acessar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header> <!-- fim do header -->
+
+    <div class="page-breadcrumb">
+      <div class="content-container">
+        <span>Você está aqui: <a href="#">Página inicial</a></span>
+      </div>
+    </div>
+    
+    <!-- Conteúdo central + sidebar -->
+    <div class="page-content">
+      <div class="content-container">
+        <!-- sidebar -->
+        <sidebar class="page-sidebar left">
+          <div class="sidebar-top">
+            <img src="assets/images/ifpb.png" alt="">
+          </div>
+          <!-- Caixa de conteúdo -->
+          <div class="box">
+            <div class="default-box">
+              <ul class="text-list">
+                <li class="text-list-item-simple-header">Ordenar por</li>
+                <li class="text-list-item">
+                  <a href="#">Relevancia</a>
+                </li>
+                <li class="text-list-item">
+                  <a href="#">Título crescente</a>
+                </li>
+                <li class="text-list-item">
+                  <a href="#">Título decrescente</a>
+                </li>
+                <li class="text-list-item">
+                  <a href="#">Data de publicação crescente</a>
+                </li>
+                <li class="text-list-item">
+                  <a href="#">Data de publicação decrescente</a>
+                </li>
+              </ul>
+              <div class="footer-box">
+                <span class="footer-title">Resultado por página</span>
+                <ul class="text-list">
+                  <li class="text-list-menu">
+                    <a href="#">10</a>
+                  </li>
+                  <li class="text-list-menu">
+                    <a href="#">20</a>
+                  </li>
+                  <li class="text-list-menu">
+                    <a href="#">30</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="default-box">
+              <span class="header-box">Filtro</span>              
+              <ul class="text-list">
+                <li class="text-list-item-simple-header">
+                  Período de publicação
+                </li>
+                <li class="text-list-item">
+                  <a href="#">Recente</a>
+                </li>
+                <li class="text-list-item">
+                  <a href="#">Desde 2014</a>
+                </li>
+                <li class="text-list-item">
+                  <a href="#">Desde 2013</a>
+                </li>
+                <li class="text-list-item">
+                  <form action="#" class="form-control">
+                    <fieldset>
+                      <label>Período específico</label>
+                      <select name="mes">
+                        <option value="0">01</option>
+                      </select>
+                      <select name="mes">
+                        <option value="0">2015</option>
+                      </select>
+                    </fieldset>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </sidebar>
+
+        <!-- Meio -->
+        <main class="main-content">
+
+          <!-- Caixa de pesquisa -->
+          <div class="mid-12">
+            <ul class="text-list">
+              <li class="text-list-menu">
+                <a href="#" class="active">Acervo</a>
+              </li>
+              <li class="text-list-menu">
+                <a href="#">Eventos</a>
+              </li>
+              <li class="text-list-menu">
+                <a href="#">Produção científica</a>
+              </li>
+              <li class="text-list-menu">
+                <a href="#">Teses e dissertações</a>
+              </li>
+              <li class="text-list-menu">
+                <a href="#">Trabalhos acadêmicos</a>
+              </li>
+            </ul>
+            <div class="element-box">
+              <form action="#" class="form-custom-search">
+                <div>
+                  <fieldset class="mid-8">
+                    <input type="text" class="input-control" placeholder="Faça aqui sua pesquisa">
+                    <ul class="list-input-custom">
+                      <li class="item">
+                        <input type="submit" class="button-search" value="">
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="mid-4">
+                    <ul class="list-input-external">
+                      <li class="item">
+                        <label class="search-type">
+                          <input type="checkbox"/>
+                          <span>Autor</span>
+                        </label>
+                      </li>
+                      <li class="item">
+                        <label class="search-type">
+                          <input type="checkbox"/>
+                          <span>Título</span>
+                        </label>
+                      </li>
+                      <li class="item">
+                        <label class="search-type">
+                          <input type="checkbox"/>
+                          <span>Assunto</span>
+                        </label>
+                      </li>
+                      <li class="item">
+                        <a href="#">Ferramentas de Pesquisa</a>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+
+            <!-- Resultado da pesquisa -->
+            <div class="content-box">
+              <ul class="date-list">
+                <li class="date-list-item">
+                  <div class="date mid-2">
+                    <span class="year">10/10/2015</span>
+                    <span>Tema: Educação, Tecnologia, Ciência</span>
+                  </div>
+                  <div class="text mid-10">
+                    <a href="#">
+                      <span class="text-type">Produção ciêntifica</span>
+                      <h4><strong>Casamentos texto..</strong></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum culpa iusto, sunt vel nobis doloribus possimus nostrum ullam. Saepe unde, necessitatibus quas, eius sed perspiciatis dignissimos dolorem? Pariatur, atque, sit?</p>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="date-list-item">
+                  <div class="date mid-2">
+                    <span class="year">10/10/2015</span>
+                    <span>Tema: Educação, Tecnologia, Ciência</span>
+                  </div>
+                  <div class="text mid-10">
+                    <a href="#">
+                      <span class="text-type">Produção ciêntifica</span>
+                      <h4><strong>Casamentos texto..</strong></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum culpa iusto, sunt vel nobis doloribus possimus nostrum ullam. Saepe unde, necessitatibus quas, eius sed perspiciatis dignissimos dolorem? Pariatur, atque, sit?</p>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="date-list-item">
+                  <div class="date mid-2">
+                    <span class="year">10/10/2015</span>
+                    <span>Tema: Educação, Tecnologia, Ciência</span>
+                  </div>
+                  <div class="text mid-10">
+                    <a href="#">
+                      <span class="text-type">Produção ciêntifica</span>
+                      <h4><strong>Casamentos texto..</strong></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum culpa iusto, sunt vel nobis doloribus possimus nostrum ullam. Saepe unde, necessitatibus quas, eius sed perspiciatis dignissimos dolorem? Pariatur, atque, sit?</p>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <div class="footer-box">
+                <div class="text-left mid-6 xs-hide">
+                  <span>Página 1 de 20</span>
+                </div>
+                <div class="mid-6">
+                  <ul class="footer-pagination">
+                    <li class="item">
+                      <a href="#" class="first">Anterior</a>
+                    </li>
+                    <li class="item">
+                      <a href="#">1</a>
+                    </li>
+                    <li class="item">
+                      <a href="#">2</a>
+                    </li>
+                    <li class="item">
+                      <a href="#">3</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="last">Próximo</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main> <!-- /main-container -->
+      </div> <!-- /content container -->
+
+      <!-- Page footer -->
+      <footer class="page-footer repositorio" id="page-footer">
+        <div class="content-container">
+          <ul class="footer-box">
+            <li class="title"><h4>Assuntos</h4></li>
+            <li class="item">
+              <a href="http://www.agricultura.gov.br/">Agropecuária</a>
+            </li>
+            <li class="item">
+              <a href="http://www.cultura.gov.br/scdc/">Cidadania</a>
+            </li>
+            <li class="item">
+              <a href="http://www.mct.gov.br/">Ciência e Tecnologia</a>
+            </li>
+            <li class="item">
+              <a href="http://www.mc.gov.br/">Comunicações</a>
+            </li>
+            <li class="item">
+              <a href="http://www.cultura.gov.br/">Cultura</a>
+            </li>
+            <li class="item">
+              <a href="http://www.fazenda.gov.br/">Economia</a>
+            </li>
+            <li class="item">
+              <a href="http://www.mec.gov.br/">Educação</a>
+            </li>
+            <li class="item">
+              <a href="http://www.mme.gov.br/">Energia</a>
+            </li>
+            <li class="item">
+              <a href="http://www.senado.gov.br/noticias/Jornal/emdiscussao/dependencia-quimica/iniciativas-do-governo-no-combate-as-drogas/plano-de-enfrentamento-ao-crack-tem-orcamento-modesto.aspx">Enfrentamento às drogas</a>
+            </li>
+            <li class="item">
+              <a href="http://www.esporte.gov.br/">Esporte</a>
+            </li>
+          </ul>
+          <ul class="footer-box">
+            <li class="title"><h4>Sobre</h4></li>
+            <li class="item">Lorem ipsum</li>
+            <li class="item">Dolor sit amet</li>
+            <li class="item">Consectetur adipisicing</li>
+            <li class="item">Elit</li>
+            <li class="item">Assumenda explicabo</li>
+            <li class="item">Accusamus perferendis</li>
+            <li class="item">Rerum aperiam in rem</li>
+          </ul>
+
+          <ul class="footer-box">
+            <li class="title"><h4>Fale com a Lorem?!</h4></li>
+            <li class="item">portalperiodicos@ifpb.edu.br</li>
+          </ul>
+
+          <ul class="footer-box">
+            <li class="title"><h4>Redes Sociais</h4></li>
+            <li class="item">
+              <a href="">Facebook</a>
+            </li>
+            <li class="item">
+              <a href="">Twitter</a>
+            </li>
+            <li class="item">
+              <a href="">Youtube</a>
+            </li>
+            <li class="item">
+              <a href="">Flickr</a>
+            </li>
+            <li class="item">
+              <ul class="footer-box">
+                <li class="title"><h4>Mapa do site</h4></li>
+              </ul>
+            </li>
+            <li class="item">
+              <ul class="footer-box">
+                <li class="title"><h4>RSS</h4></li>
+                <li class="item">o que é RSS?</li>
+                <li class="item">Assine o nosso RSS</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-footer">
+          <div class="content-container">
+            <div class="left">
+              <img src="assets/images/acesso-a-informacao.png" alt="">
+            </div>
+            <div class="right">
+              <img src="assets/images/brasil.png" alt="">
+            </div>
+          </div>
+        </div>
+      </footer> <!-- /page footer -->
+    </div> <!-- /page content -->
+  </div> <!-- /page-container -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+  <!-- fotorama.css & fotorama.js. -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+</body>
+</html>
