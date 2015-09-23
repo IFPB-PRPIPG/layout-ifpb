@@ -7,5 +7,13 @@
   a {
     color: $default-green;
     text-decoration: none;
+    &:after {
+      content: " > ";
+    }
+    &:last-child {
+      &:after {
+        content: "";
+      }
+    }
   }
 }

@@ -10,19 +10,26 @@
 .text-list-menu {
   display: block;
   margin: 0 5px;
-  a {
+  a,span {
     color: #000;
     display: block;
-    &.active {
-      color: $default-green;
-      font-size: 20pt;
-      font-weight: bold;
-    }
+    cursor: pointer;
   }
+
+  label input[type="radio"] {
+    display: none;
+  }
+  label input:checked ~ span {
+   color: $default-green;
+   font-size: 20pt;
+   font-weight: bold;   
+  }
+
   @media (min-width: $screen-mid-size) {
     display: inline-block;
   }
 }
+
 //LI
 .text-list-item {
   display: block;

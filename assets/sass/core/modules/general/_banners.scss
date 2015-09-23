@@ -1,3 +1,4 @@
 .page-banners {
+  @include clear();
 	padding-bottom: 30px;
 }
