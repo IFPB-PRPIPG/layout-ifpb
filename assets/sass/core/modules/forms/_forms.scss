@@ -236,6 +236,10 @@
     margin-bottom: 5px;
     @include clear();
   }
+  input {
+    outline: 0;
+    max-height: 39px;
+  }
 
   //Input customizado:
   //O input parece conter itens (máximo: 3), incluindo o botão de search
@@ -250,10 +254,12 @@
     border-left: 0;
     display: block;
     margin: 0;
-    padding: 8px 0;
+    //padding: 8px 0;
     background: #fff;
     text-align: right;
     border-radius: 0 5px 5px 0;
+    max-height: 39px;
+
 
     .item {
       display: inline-block;
@@ -261,12 +267,15 @@
       margin: 0;
       border-left: 1px solid $boder-ligthen-grey;
       font-weight: lighter;
+      padding: 8px 10px;
+
 
       &:first-child {
         padding-right: 0;
       }
+
       &:last-child {
-        padding: 0 10px;
+        padding: 7px 10px;
         margin: 0;
       }
 
