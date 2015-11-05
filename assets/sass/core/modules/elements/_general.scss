@@ -2,7 +2,7 @@
 =====================================*/
 .community-icons {
   @include clear();
-  
+
   & > div {
     padding-bottom: 1.66666%;
   }
@@ -18,7 +18,12 @@
   }
   .community-disabled {
     display: block;
-    background: $community-disabled;
+    background: $community-disabled; 
+  }
+
+  .community-active,
+  .community-disabled {
+    padding: 15px;
   }
 }
 

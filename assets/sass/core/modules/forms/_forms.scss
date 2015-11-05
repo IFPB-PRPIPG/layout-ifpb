@@ -128,7 +128,6 @@
     display: block;
     @media (min-width: $screen-mid-size) {
       display: inline-block;
-      width: 37%;
     }
   }
 
@@ -258,7 +257,7 @@
     background: #fff;
     text-align: right;
     border-radius: 0 5px 5px 0;
-    max-height: 39px;
+    height: 39px;
 
 
     .item {
